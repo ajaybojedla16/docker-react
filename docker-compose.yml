@@ -2,8 +2,8 @@ version: '3'
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: 'ajaybojedla/docker-react'
+    mem_limit: 128m
+    hostname: client
     ports:
-      - '80:80'
+      - '4000:80'
