@@ -4,6 +4,6 @@ services:
   web:
     image: 'ajaybojedla/docker-react'
     mem_limit: 128m
-    hostname: client
+    hostname: web
     ports:
-      - '4000:80'
+      - '80:80'
